@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "teamaddoners",
+	"version": "2.0.0",
+	"name": "Team Addoners Ultimate Optimizers",
+	"description": "An optimising mod for Minecraft JAVA made by Mcbugs-Addon!",
+	"authors": [
+		"Mcbugsaddon"
+	],
+	"contact": {
+		"homepage": "https://sites.google.com/view/teamaddoners/home",
+		"sources": "https://sites.google.com/view/ta-sourcecode/home"
+	},
+	"license": "MIT",
+	"icon": "assets/teamaddoners/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"teamaddoners.Teamaddonersultimateoptimizers"
+		],
+		"client": [
+		]
+	},
+	"mixins": [
+		"teamaddoners.mixins.json",
+		{
+			"config": "teamaddoners.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
